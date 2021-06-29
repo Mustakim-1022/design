@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<section class="header">
+		<div class="nav">
+			<img src="logo%20w.png" alt="logo">
+			
+			<div class="navlinks">
+				<ul>
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">TESTIMONIAL</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</div>
+			<dav class="menu">
+				<img src="menu.png" onclick="menu();" class="show">
+			</dav>
+		</div>
+		
+		<div class="header_con">
+
+				<div class="col_1">
+					<img src="mobile-vector.png" alt="mobile">
+				</div>
+				<div class="col_2">
+					<h1>Design Factory For You</h1>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<div class="btn">
+						<a href="#"><span></span>FIND OUT</a>
+						<a href="#"><span></span>KNOW MORE</a>
+					</div>
+				</div>
+
+		</div>
+		
+		
+		
+	</section>
+	
+	
+	
+	<section id="about">
+		<div class="col">
+			<div class="col_1">
+				<h2>About Us</h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			</div>
+			<div class="col_2">
+				<img src="about.png" alt="">
+			</div>
+		</div>
+	</section>
+	
+	
+	<section id="service">
+		<div class="col">
+			<div class="col_1">
+				<div class="img-box">
+					<i class="fa fa-paint-brush"></i>
+					<div class="heading">
+						<h3>Fresh Designs</h3>
+						<p>We Bring you Fresh Design ever</p>
+					</div>
+				</div>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+			</div>
+			<div class="col_1">
+				<div class="img-box">
+					<i class="fa fa-internet-explorer"></i>
+					<div class="heading">
+						<h3>Browser Compitable</h3>
+						<p>We code all browser compatible</p>
+					</div>
+				</div>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+			</div>
+			<div class="col_1">
+				<div class="img-box">
+					<i class="fa fa-users"></i>
+					<div class="heading">
+						<h3>User Freandly</h3>
+						<p>Our themes are easy to use</p>
+					</div>
+				</div>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+			</div>
+		</div>
+	</section>
+	
+	
+	<script>
+		
+		function menu()
+		
+		{
+			let toggle = document.querySelector('.navlinks');
+			
+			let show = document.querySelector('.show');
+			
+			if (toggle.style.right == "-250px")
+				{
+					toggle.style.right = "0px";
+					show.src = "cross.png";
+				}
+			
+			else
+				
+				{
+					toggle.style.right = "-250px"
+					show.src = "menu.png";
+				}
+		}
+	
+	</script>
+</body>
+</html>
