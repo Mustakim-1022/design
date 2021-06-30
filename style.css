@@ -400,7 +400,7 @@
 	margin: 0 auto;
 	padding: 20px 0px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 }
