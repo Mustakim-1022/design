@@ -18,8 +18,10 @@
 			<div class="navlinks">
 				<ul>
 					<li><a href="#" onclick="menu();">HOME</a></li>
-					<li><a href="#" onclick="menu();">ABOUT</a></li>
-					<li><a href="#" onclick="menu();">TESTIMONIAL</a></li>
+					<li><a href="#about" onclick="menu();">ABOUT</a></li>
+					<li><a href="#service" onclick="menu();">SERVICE</a></li>
+					<li><a href="#team" onclick="menu();">EXPERT</a></li>
+					<li><a href="#testimonial" onclick="menu();">TESTIMONIAL</a></li>
 					<li><a href="#" onclick="menu();">CONTACT</a></li>
 				</ul>
 			</div>
@@ -249,7 +251,7 @@
 			
 			let show = document.querySelector('.show');
 			
-			if (toggle.style.right == "-250px")
+			if (toggle.style.right == "-50%")
 				{
 					toggle.style.right = "0px";
 					show.src = "cross.png";
@@ -258,7 +260,7 @@
 			else
 				
 				{
-					toggle.style.right = "-250px"
+					toggle.style.right = "-50%"
 					show.src = "menu.png";
 				}
 		}
@@ -274,7 +276,7 @@
 			if(toggle.style.right = "0px")
 				
 				{
-					toggle.style.right = "-250px";
+					toggle.style.right = "-50%";
 					show.src = "menu.png";
 				}
 		}

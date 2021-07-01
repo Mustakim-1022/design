@@ -6,6 +6,10 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+html
+{
+	scroll-behavior: smooth;
+}
 .header
 {
 	margin: 0 auto;
@@ -34,21 +38,28 @@
 .header .nav .navlinks
 {
 	position: fixed;
-	right: -250px;
+	right: -50%;
 	top: 0vh;
 	background: #6ab04c;
-	width: 250px;
+	width: 50%;
 	height: 100vh;
 	transition: 0.5s;
 	z-index: 1111;
 }
-
+.header .nav .navlinks ul
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
 .header .nav .navlinks ul li 
 {
 	list-style: none;
 	text-align: left;
-	margin-left: 30px; 
-	margin-top: 50px; 
+	text-align: center;
+	margin: 50px 0px;
 }
 
 .header .nav .navlinks ul li a
