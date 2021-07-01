@@ -17,10 +17,10 @@
 			
 			<div class="navlinks">
 				<ul>
-					<li><a href="#">HOME</a></li>
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">TESTIMONIAL</a></li>
-					<li><a href="#">CONTACT</a></li>
+					<li><a href="#" onclick="menu();">HOME</a></li>
+					<li><a href="#" onclick="menu();">ABOUT</a></li>
+					<li><a href="#" onclick="menu();">TESTIMONIAL</a></li>
+					<li><a href="#" onclick="menu();">CONTACT</a></li>
 				</ul>
 			</div>
 			<dav class="menu">
@@ -50,7 +50,7 @@
 	
 	
 	
-	<section id="about">
+	<section id="about" onclick="hideMenu();">
 		<div class="col">
 			<div class="col_1">
 				<h2>About Us</h2>
@@ -63,7 +63,7 @@
 	</section>
 	
 	
-	<section id="service">
+	<section id="service" onclick="hideMenu();">
 		<div class="col">
 			<div class="col_1">
 				<div class="img-box">
@@ -98,7 +98,7 @@
 		</div>
 	</section>
 	
-	<section id="team">
+	<section id="team" onclick="hideMenu();">
 			<h2>EXPERT REVIEWER</h2>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
 		<div class="col">
@@ -168,7 +168,9 @@
 		</div>
 	</section>
 	
-	<section id="testimonial">
+	<section id="testimonial" onclick="hideMenu();">
+			<h2>Testimonail</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 		<div class="review">
 			<div id="col">
 				<div class="col-1">
@@ -189,7 +191,7 @@
 						<div class="img_box">
 						<img src="user2.jpg" alt="user1">
 						<div class="info">
-							<h3>Emily</h3>
+							<h3>John Doe</h3>
 							<h5>Marketing Head</h5>
 							<div class="rating"></div>
 						</div>
@@ -202,7 +204,7 @@
 						<div class="img_box">
 						<img src="asad.jpg" alt="user1">
 						<div class="info">
-							<h3>Emily</h3>
+							<h3>Clark</h3>
 							<h5>Marketing Head</h5>
 							<div class="rating"></div>
 						</div>
@@ -216,13 +218,13 @@
 						<div class="img_box">
 						<img src="mustakim.jpg" alt="user1">
 						<div class="info">
-							<h3>Emily</h3>
+							<h3>Ryan</h3>
 							<h5>Marketing Head</h5>
 							<div class="rating"></div>
 						</div>
 						</div>
 						<p>
-							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
 						</p>
 		
 				</div> 
@@ -261,6 +263,22 @@
 				}
 		}
 	
+		
+		
+		
+	function hideMenu()
+		{
+			let toggle = document.querySelector('.navlinks');
+			let show = document.querySelector('.show');
+			
+			if(toggle.style.right = "0px")
+				
+				{
+					toggle.style.right = "-250px";
+					show.src = "menu.png";
+				}
+		}
+	
 	
 	
 	var slide = document.getElementById('col');
@@ -277,9 +295,17 @@
 		
 		slide.style.top = x + "px";
 		
-		console.log('you are in function');
+			
+			
 		}
-		
+		else
+			{
+				if (x == -900)
+				
+				{
+					x =+ 300;
+				}
+			}
 		
 	}
 	
@@ -292,8 +318,18 @@
 		
 		slide.style.top = x + "px";
 		
-		console.log('you are in function');
+
 		}
+		
+		else
+			{		
+					x = -900;
+				
+				
+					slide.style.top = x + "px";
+					
+			}
+		
 		
 		
 	}
