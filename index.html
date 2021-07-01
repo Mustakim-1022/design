@@ -151,7 +151,7 @@
 			</div>
 			
 			<div class="col_1">
-				<img src="daud.jpg">
+				<img src="zaid.jpg">
 				<div class="detail_box">
 					<h3>Zaid Shaikh</h3>
 					<h4>CEO/FOUNDER</h4>
@@ -167,6 +167,77 @@
 			</div>
 		</div>
 	</section>
+	
+	<section id="testimonial">
+		<div class="review">
+			<div id="col">
+				<div class="col-1">
+						<div class="img_box">
+						<img src="user1.jpg" alt="user1">
+						<div class="info">
+							<h3>Emily</h3>
+							<h5>Marketing Head</h5>
+							<div class="rating"></div>
+						</div>
+						</div>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+						</p>
+		
+				</div>
+				<div class="col-1">
+						<div class="img_box">
+						<img src="user2.jpg" alt="user1">
+						<div class="info">
+							<h3>Emily</h3>
+							<h5>Marketing Head</h5>
+							<div class="rating"></div>
+						</div>
+						</div>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+						</p>
+		
+				</div><div class="col-1">
+						<div class="img_box">
+						<img src="asad.jpg" alt="user1">
+						<div class="info">
+							<h3>Emily</h3>
+							<h5>Marketing Head</h5>
+							<div class="rating"></div>
+						</div>
+						</div>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+						</p>
+		
+				</div>
+					<div class="col-1">
+						<div class="img_box">
+						<img src="mustakim.jpg" alt="user1">
+						<div class="info">
+							<h3>Emily</h3>
+							<h5>Marketing Head</h5>
+							<div class="rating"></div>
+						</div>
+						</div>
+						<p>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+						</p>
+		
+				</div> 
+			</div>
+			
+			
+			<div class="sidebar">
+				<img src="up.png" alt="" id="upArrow" onclick="upArrow();">
+				<img src="down.png" alt="" id="downArrow">
+			</div>
+			
+			</div>
+	</section>
+	
+	
 	<script>
 		
 		function menu()
@@ -190,6 +261,43 @@
 				}
 		}
 	
+	
+	
+	var slide = document.getElementById('col');
+	var upArrow = document.getElementById('upArrow');
+	var downArrow = document.getElementById('downArrow');
+	
+	var x = 0;
+		
+	upArrow.onclick = function ()
+	{
+		if( x > -900)
+		{
+		x = x - 300;
+		
+		slide.style.top = x + "px";
+		
+		console.log('you are in function');
+		}
+		
+		
+	}
+	
+	
+	downArrow.onclick = function ()
+	{
+		if( x < 0)
+		{
+		x = x + 300;
+		
+		slide.style.top = x + "px";
+		
+		console.log('you are in function');
+		}
+		
+		
+	}
+
 	</script>
 </body>
 </html>
