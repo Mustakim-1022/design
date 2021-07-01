@@ -572,4 +572,9 @@ h3
 	.review .col-1 p {
     font-size: 14px;
 		}
+	.sidebar img
+	{
+	width: 40px;
+
+	}
 }
