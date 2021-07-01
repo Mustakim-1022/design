@@ -12,7 +12,7 @@
 	background: linear-gradient(rgba(0,0,0,0.2),#6ab04c),url(cool-background.png);
 	background-position: center;
 	background-size: cover;
-	height: 100vh;
+
 	position: relative;
 }
 
@@ -91,11 +91,8 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	
+	padding : 40px 0px;
+
 }
 
 .header_con .col_1, .col_2
@@ -106,6 +103,7 @@
 .header_con .col_1 img
 {
 	width: 400px;
+	margin-bottom: 40PX;
 	animation: animate 3s linear infinite;
 }
 
