@@ -431,7 +431,7 @@ html {
 }
 
 #team .col_1 {
-	width: 280px;
+	width: 250px;
 	background: #fff;
 	text-align: center;
 	padding: 20px 10px;
@@ -470,7 +470,7 @@ html {
 }
 
 #team .col_1 .detail_box h3 {
-	font-size: 24px;
+	font-size: 22px;
 }
 
 #team .col_1 .detail_box .fa {
