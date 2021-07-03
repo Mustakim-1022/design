@@ -19,7 +19,7 @@ html {
 }
 
 .header .nav {
-	width: 85%;
+	width: 1140px;
 	margin: 0 auto;
 	padding-top: 10px;
 	display: flex;
@@ -73,7 +73,7 @@ html {
 .header .nav .menu {
 	position: fixed;
 	top: 20px;
-	right: 60px;
+	right: 10%;
 	z-index: 3333;
 	width: 25px;
 	height: 25px;
@@ -187,6 +187,12 @@ html {
 
 
 @media(max-width:1160px) {
+
+	.header .nav {
+		width: 85%;
+	}
+
+
 	.header .header_con {
 		width: 85%;
 	}
@@ -628,5 +634,139 @@ html {
 		width: 40px;
 		height: 35px;
 
+	}
+}
+
+
+
+#quotes {
+	background-image: url(forest.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+
+.quotes {
+	width: 1140px;
+	margin: 50px 0;
+}
+
+
+.quotes h3 {
+	font-size: 40px;
+	color: #fff;
+	text-shadow: -4px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.quotes h3 .fa {
+	margin: 0 10px;
+}
+
+
+
+@media(max-width:1160px) {
+	.quotes {
+		width: 85%;
+	}
+
+}
+
+
+
+#contactUs {
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 60px;
+	
+}
+
+#contactUs .col {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#contactUs .col .col_1,
+#contactUs .col .col_2 {
+	flex-basis: 50%;
+	height: 300px;
+	padding: 10px;
+}
+
+#contactUs .col .col_1 {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	color: ;
+	font-weight: 600;
+	margin-right: 20px;
+}
+
+#contactUs .col .col_1 h4 {
+	font-size: 25px;
+
+}
+
+#contactUs .col .col_1 h5 {
+	font-size: 16px;
+}
+
+#contactUs .col .col_2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: #6ab04c;
+
+}
+
+#contactUs .col .col_2 form {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+}
+
+
+#contactUs .col .col_2 form input {
+	margin-bottom: 10px;
+	width: 300px;
+	border-radius: 10px;
+	border: none;
+	padding: 10px;
+}
+
+#contactUs .col .col_2 form .submit {
+	padding: 5px;
+	border: none;
+	border-radius: 10px;
+	margin-top: 10px;
+	width: 100px;
+	font-weight: 600;
+	background: #e2e1e3;
+
+}
+
+#contactUs .col .col_2 form .submit:hover {
+	background: #cacacc;
+}
+
+
+@media(max-width:768px)
+{
+	#contactUs .col {
+	flex-direction: column;
+}
+	#contactUs .col .col_1,
+	#contactUs .col .col_2 {
+	width: 100%;
+	align-items: center;
 	}
 }
