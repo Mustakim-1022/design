@@ -770,4 +770,9 @@ html {
 	align-items: center;
 	padding: 25px;
 	}
+	
+	#contactUs .col .col_1
+	{
+		margin-bottom: 10px;
+	}
 }
